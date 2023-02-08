@@ -1,0 +1,21 @@
+<form [formGroup]="employeeUpdateForm" class="form-card">
+    <div class="form-group">
+        <label for="lastName">First name</label>
+        <input id="firstName" type="text" formControlName="firstName" [(ngModel)]="employee.firstName">
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last name</label>
+        <input id="lastName" type="text" formControlName="lastName" [(ngModel)]="employee.lastName">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="text" formControlName="email" [(ngModel)]="employee.email">
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone</label>
+        <input id="phone" type="text" formControlName="phone" [(ngModel)]="employee.phone">
+    </div>
+    <div class="action-buttons">
+        <button type="submit" class="btn btn-warning" (click)="onSubmit()">Enregistrer</button>
+    </div>
+</form>

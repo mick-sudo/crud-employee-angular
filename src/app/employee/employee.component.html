@@ -1,7 +1,17 @@
-    <div class="employee">
-      <h5 class="card-title">employee</h5>
-      <p class="card-text">mail : {{employee.firstName}}</p>
-      <p class="card-text">mail : {{employee.lastName}}</p>
-      <p class="card-text">mail : {{employee.email}}</p>
-      <p class="card-text">phone : {{employee.phone}}</p>
-    </div>
+
+    <div class="row m3">
+      <div class="col-sm-6 form-card">
+        <div class="card" >
+          <div class="card-body">
+            <p class="card-text">First name : {{employee.firstName}}</p>
+            <p class="card-text">last name : {{employee.lastName}}</p>
+            <p class="card-text">Mail : {{employee.email}}</p>
+            <p class="card-text">Phone : {{employee.phone}}</p>
+            <a type="submit" (click)="deleteEmployee(employee)" class="btn btn-danger">Delete</a>
+            <!-- <a type="submit" routerLink="/update/{{employee.id}}" class="btn btn-primary">update</a> -->
+            <a type="submit" (click)="updateEmployee(employee.id!)" class="btn btn-primary">update</a>
+          </div>
+        </div>
+      </div>
+
+      

@@ -1,1 +1,1 @@
-<app-employee *ngFor="let employee of employees$ | async" [employee]="employee"></app-employee>
+<app-employee *ngFor="let employee of employees$ | async" [employee]="employee" (employeeRemoved)="refresh()"></app-employee>

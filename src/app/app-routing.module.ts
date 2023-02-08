@@ -3,12 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { NewEmployeeComponent } from './new-employee/new-employee.component';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
 
 
 
 const routes: Routes = [
-  { path: '', component: EmployeeListComponent },  
+  { path: 'allEmployee', component: EmployeeListComponent },
+  { path: 'create', component: NewEmployeeComponent },
+  { path: 'update/:id', component: UpdateEmployeeComponent }
 ]
 
 @NgModule({
